@@ -1,0 +1,86 @@
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none;
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+  display: block;
+  position: fixed;
+  color: #fff;
+  z-index: 99999;
+  padding: 10px;
+  bottom: 10px;
+  right: 130px;
+  border-radius: 10px;
+}
+.krugAleksandr{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom:20px;
+  right: 20px;
+  z-index: 999999;
+  border-radius: 50%;
+  background-image: url(../img/call.gif);
+  animation:blur .75s ease-out infinite;
+  background-size: 100%;
+}
+/* demo контейнер */
+.formm{
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 330px;
+  height: auto;
+	color: #fff;
+	padding: 0 0 5px 0;
+	margin-left: 10%;
+}
+.formm div{
+  padding-bottom: 4px;
+}
+.utpslog{
+  font-size: 50px;
+}
+.utpdesc{
+  font-size: 30px;
+}
+@media (max-width: 600px) {
+  .utpslog{
+    font-size: 35px;
+  }
+  .utpdesc{
+    font-size: 20px;
+  }
+  .hide:checked + label + div {
+    right: auto;
+    left: calc(50% - 160px);
+  }
+}
+@media screen and (min-width:300px) and (max-width:450px) {
+  .formm{
+    width: 300px;;
+  }
+  .utpslog{
+    font-size: 24px;
+  }
+  .utpdesc{
+    font-size: 17px;
+  }
+  .hide:checked + label + div {
+    bottom: 60px;
+  }
+}

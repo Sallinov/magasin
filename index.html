@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript" charset="UTF-8" src="lib/button.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="lib/help.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="lib/vs.js"></script>
+	<link href="slider/slider.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/help.css" rel="stylesheet"/>
+	<link href="css/css.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="demo">
+		 <input type="checkbox" id="hd-1" class="hide"/>
+		 <label for="hd-1" onclick="show()" class="krugAleksandr" id="krug"></label>
+		 <div>
+				<form class="formm center" action="lib/mail.php" method="post" enctype="multipart/form-data">
+					<div class="info text-25">Бесплатная консультация</div>
+					<div>Имя:<span style="color:red">*</span></div>
+					<div><input type="text" class="label" name="imya" id="one" placeholder="Александр..."></div>
+					<div>Телефон:<span style="color:red">*</span></div>
+					<div><input type="text" class="label" name="email" id="twoo" placeholder="+375(29)751-11-16"></div>
+					<div><input onclick="feedback()" type="submit" class="btnnn" id="name" value="Жду звонка"></div>
+					<div>перезвоним в течении 3 минут</div>
+					<div class="text-15">с <span style="color:red">9:00</span> до <span style="color:red">18:00</span> в рабочие дни</div>
+				</form>
+		 </div>
+	</div>
+<div class="wrapper">
+	<header class="header">
+		<div class="left logo middle">
+			<img src="img/logo.svg" width="60px" class="logo"/>
+			<span>second hand</span>
+		</div>
+		<div class="right contact middle">
+			<div class="home">
+				ул. 28 Июля 33Б
+			</div>
+			<div>
+				+375 (29) 721-53-37
+			</div>
+		</div>
+	</header>
+	<main class="content">
+	<div class="utp table center dop" style="width: calc(100vw - 25px)">
+		<div class="col-50" style="vertical-align: middle;">
+			<form class="form" action="lib/mail.php" method="post" id="form">
+        <div class="info text-25">Бесплатная консультация</div>
+        <div>Имя:<span style="color:red">*</span></div>
+        <div><input type="text" class="label" name="imya" id="one" placeholder="Александр..."></div>
+        <div>Телефон:<span style="color:red">*</span></div>
+        <div><input type="text" class="label" name="email" id="twoo" placeholder="+375(29)751-11-16"></div>
+        <div><input onclick="feedback()" type="submit" class="btnnn" id="name" value="Жду звонка"></div>
+				<div>перезвоним в течении 3 минут</div>
+				<div class="text-15">с <span style="color:red">9:00</span> до <span style="color:red">18:00</span> в рабочие дни</div>
+      </form>
+		</div>
+		<div class="col-50" style="vertical-align: middle;">
+        <div class="text-40"><span class="text-extractor">Магазин</span></div>
+				<div class="text-40"><span class="text-extractor">одежды</span></div>
+		</div>
+	</div>
+	<div class="clear-both both center">
+		<div class="zag text-35">Почему именно мы?</div>
+		<div class="text-20 both">Чем мы вас сможем заинтересовать?</br> Что есть у нас,чего нет у других?</div>
+		<hr/>
+	<div class="table both">
+		 <div class="col-33 text-20 center">
+				<div><img src="img/prodavec.jpg" width="200px"/></div>
+				<div>Быстрое обслуживание. Экономия<br/> времени.</div>
+				<button onclick="gdsg()" class="btn" id="btn">Дополнительно</button>
+				<div id="elem" style="display:none;">
+					Людей с улицы не берём. Только дипломированные специалисты, знающие что они делают.
+				</div>
+		 </div>
+		 <div class="col-33 text-20 center">
+				<div><img class="midle" src="img/help.jpg" width="200px"/></div>
+				<div>Качественное обслуживание. Помощь<br/> в подборе вещей.</div>
+				<button onclick="gdsg1()" class="btn" id="btn1">Дополнительно</button>
+				<div id="elem1" style="display:none;">
+					Индевидуальный подход к посетителям, предоставление всего товара пользователю.
+				</div>
+		 </div>
+		 <div class="col-33 text-20 center">
+				<div><img class="midle" src="img/tovar.jpg" width="200px"/></div>
+				<div>Товар обновляется еженедельно.<br/>Стилажи рассортированы.</div>
+				<button onclick="gdsg2()" class="btn" id="btn2">Дополнительно</button>
+				<div id="elem2" style="display:none;">
+					Конечный товар получаем каждую неделю,прилавки сортируются по их пренадлежности.
+				</div>
+		 </div>
+	</div>
+	</div>
+</div>
+<div class="center">
+	 <div class="zag text-35">Фотографии рабочего помещения<br>магазина и стелажей</div>
+	 <hr/>
+</div>
+<div id="slider">
+	<input type="radio" name="slider" id="slide1" checked="">
+	<input type="radio" name="slider" id="slide2">
+	<input type="radio" name="slider" id="slide3">
+	<input type="radio" name="slider" id="slide4">
+	<input type="radio" name="slider" id="slide5">
+	<div id="slides">
+		<div id="overflow">
+			<div class="inner">
+				<div class="page">
+					<img src="slider/img/1.jpg" />
+				</div>
+				<div class="page">
+					<img src="slider/img/2.jpg" />
+				</div>
+				<div class="page">
+					<img src="slider/img/3.jpg" />
+				</div>
+				<div class="page">
+					<img src="slider/img/4.jpg" />
+				</div>
+				<div class="page">
+					<img src="slider/img/5.jpg" />
+				</div>
+			</div> <!--inner-->
+		</div> <!--overflow-->
+	</div> <!--slides-->
+	<div id="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+	<div id="active">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+</div>
+<div class="clear-both both center">
+	<div class="zag text-35">Как устроенна наша</br>работа</div>
+	<hr/>
+<div class="table center both">
+	<div class="col-15 text-20">
+		 <div class="center"><img src="img/customer-service.svg" width="70%"/></div>
+		 <div class="center">Заказ<br/>товара</div>
+	</div>
+	<div class="col-5">
+		<img src="img/arrow.svg" width="50px" class="arrows"/>
+	</div>
+	<div class="col-15 text-20">
+		 <div class="center"><img src="img/aeroplane.svg" width="70%"/></div>
+		 <div class="center">Доставка<br/>товара.</div>
+	</div>
+	<div class="col-5">
+		<img src="img/arrow.svg" width="50px" class="arrows"/>
+	</div>
+	<div class="col-15 text-20">
+		 <div class="center"><img src="img/warehouse.svg" width="70%"/></div>
+		 <div class="center">Отгрузка<br/>одежды.</div>
+	</div>
+	<div class="col-5">
+		<img src="img/arrow.svg" width="50px" class="arrows"/>
+	</div>
+	<div class="col-15 text-20">
+		 <div class="center"><img src="img/delivery-man.svg" width="70%"/></div>
+		 <div class="center">Формирование<br/>витрин.</div>
+	</div>
+	<div class="col-5">
+		<img src="img/arrow.svg" width="50px" class="arrows"/>
+	</div>
+	<div class="col-15 text-20">
+		 <div class="center"><img src="img/barcode-scanner.svg" width="70%"/></div>
+		 <div class="center">Продажа<br/>одежды.</div>
+	</div>
+</div>
+</div>
+</div>
+	</main>
+</div>
+<footer class="footer">
+	<div class="carta">
+		<div class="text-35">
+			<span class="text-extractor">ул. 28 Июля 33Б</span>
+		</div>
+		<div class="text-25">
+			<span class="text-extractor">+375 (29) 721-53-37</span>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
